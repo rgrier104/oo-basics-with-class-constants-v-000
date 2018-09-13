@@ -14,8 +14,7 @@ BRANDS = []
   end
 
   def brands=(brand)
-    @brand = brand
-    if BRANDS.exclude?(@brand)
+    @br!(BRANDS.include?(@brand))
       BRANDS << @brand
     end
   end
