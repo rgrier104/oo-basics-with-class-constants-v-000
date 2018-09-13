@@ -13,7 +13,7 @@ BRANDS = []
     puts "Your shoe is as good as new!"
   end
 
-  def brands=(brand)
+  def brands=(@brand)
     @brand = brand
     if !(BRANDS.include?(@brand))
       BRANDS << @brand
